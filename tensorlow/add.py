@@ -1,4 +1,4 @@
-import operation
+from tensorlow.operation import Operation
 
 class add(Operation):
     def __init__(self, x, y):
@@ -8,6 +8,3 @@ class add(Operation):
         self.inputs = [x_var, y_var]
         return x_var + y_var
 
-if __name__ == '__main__':
-    x= [1]
-    y= [2]
