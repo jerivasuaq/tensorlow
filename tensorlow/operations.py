@@ -1,6 +1,8 @@
 from typing import List
+
 from tensorlow.nodes import Graph, Node
 
+import numpy as np
 
 class Operation(Node):
     def __init__(self, input_nodes: List[Node] = []):
@@ -40,6 +42,14 @@ class matmul(Operation):
     def compute(self, x_var, y_var):
         self.inputs = [x_var, y_var]
         return x_var.dot(y_var)
+
+
+class Sigmoid(Operation):
+    def __init__(self, z: Node):
+        super().__init__([z])
+
+    def compute(self, z_val):
+        return 1 / (1 + np.exp(-z_val))
 
 
 if __name__ == "__main__":
