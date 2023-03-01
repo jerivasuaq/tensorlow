@@ -1,12 +1,10 @@
 from tensorlow.nodes import Graph, Node
 
-import torch
-
 
 class Operation(Node):
     def __init__(self, input_nodes=[]):
         super().__init__(input_nodes)
-        
+
         for node in input_nodes:
             node.output_nodes.append(self)
 

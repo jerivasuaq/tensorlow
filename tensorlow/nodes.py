@@ -34,3 +34,8 @@ class Variable(Node):
         self.value = initial_value
         self.output_nodes = []
         Graph._default_graph.variables.append(self)
+
+
+if Graph._default_graph is None:
+    graph = Graph()
+    graph.set_as_default()
