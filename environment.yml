@@ -15,6 +15,8 @@ dependencies:
   - black=22.6.0=py310h06a4308_0
   - blas=1.0=mkl
   - bleach=4.1.0=pyhd3eb1b0_0
+  - brotli=1.0.9=h5eee18b_7
+  - brotli-bin=1.0.9=h5eee18b_7
   - brotlipy=0.7.0=py310h7f8727e_1002
   - bzip2=1.0.8=h7b6447c_0
   - ca-certificates=2023.01.10=h06a4308_0
@@ -23,7 +25,9 @@ dependencies:
   - charset-normalizer=2.0.4=pyhd3eb1b0_0
   - click=8.0.4=py310h06a4308_0
   - comm=0.1.2=py310h06a4308_0
+  - contourpy=1.0.5=py310hdb19cb5_0
   - cryptography=39.0.1=py310h9ce1e76_0
+  - cycler=0.11.0=pyhd3eb1b0_0
   - dbus=1.13.18=hb2f20db_0
   - debugpy=1.5.1=py310h295c915_0
   - decorator=5.1.1=pyhd3eb1b0_0
@@ -33,6 +37,7 @@ dependencies:
   - expat=2.4.9=h6a678d5_0
   - flit-core=3.6.0=pyhd3eb1b0_0
   - fontconfig=2.14.1=h52c9d5c_1
+  - fonttools=4.25.0=pyhd3eb1b0_0
   - freetype=2.12.1=h4a9f257_0
   - future=0.18.3=py310h06a4308_0
   - giflib=5.2.1=h5eee18b_3
@@ -61,9 +66,14 @@ dependencies:
   - jupyterlab_pygments=0.1.2=py_0
   - jupyterlab_server=2.19.0=py310h06a4308_0
   - jupyterlab_widgets=1.0.0=pyhd3eb1b0_1
+  - kiwisolver=1.4.4=py310h6a678d5_0
   - krb5=1.19.4=h568e23c_0
+  - lcms2=2.12=h3be6417_0
   - ld_impl_linux-64=2.38=h1181459_1
   - lerc=3.0=h295c915_0
+  - libbrotlicommon=1.0.9=h5eee18b_7
+  - libbrotlidec=1.0.9=h5eee18b_7
+  - libbrotlienc=1.0.9=h5eee18b_7
   - libclang=10.0.1=default_hb85057a_2
   - libdeflate=1.17=h5eee18b_0
   - libedit=3.1.20221030=h5eee18b_0
@@ -88,12 +98,15 @@ dependencies:
   - lxml=4.9.1=py310h1edc446_0
   - lz4-c=1.9.4=h6a678d5_0
   - markupsafe=2.1.1=py310h7f8727e_0
+  - matplotlib=3.6.2=py310h06a4308_0
+  - matplotlib-base=3.6.2=py310h945d387_0
   - matplotlib-inline=0.1.6=py310h06a4308_0
   - mistune=0.8.4=py310h7f8727e_1000
   - mkl=2021.4.0=h06a4308_640
   - mkl-service=2.4.0=py310h7f8727e_0
   - mkl_fft=1.3.1=py310hd6ae3a3_0
   - mkl_random=1.2.2=py310h00e6091_0
+  - munkres=1.1.4=py_0
   - mypy_extensions=0.4.3=py310h06a4308_0
   - nbclassic=0.5.2=py310h06a4308_0
   - nbclient=0.5.13=py310h06a4308_0
@@ -117,6 +130,7 @@ dependencies:
   - pcre=8.45=h295c915_0
   - pexpect=4.8.0=pyhd3eb1b0_3
   - pickleshare=0.7.5=pyhd3eb1b0_1003
+  - pillow=9.4.0=py310h6a678d5_0
   - pip=22.3.1=py310h06a4308_0
   - platformdirs=2.5.2=py310h06a4308_0
   - pluggy=1.0.0=py310h06a4308_1
@@ -131,6 +145,7 @@ dependencies:
   - pycparser=2.21=pyhd3eb1b0_0
   - pygments=2.11.2=pyhd3eb1b0_0
   - pyopenssl=23.0.0=py310h06a4308_0
+  - pyparsing=3.0.9=py310h06a4308_0
   - pyqt=5.15.7=py310h6a678d5_1
   - pyrsistent=0.18.0=py310h7f8727e_0
   - pysocks=1.7.1=py310h06a4308_0
