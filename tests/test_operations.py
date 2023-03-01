@@ -1,4 +1,5 @@
 import pytest
+from tensorlow.nodes import Placeholder, Variable
 
 from tensorlow.operations import Operation, add, multiply
 
@@ -10,18 +11,21 @@ class TestOperation:
         assert o is not None
 
 
-# class TestAdd():
+class TestAdd:
+    def test(self):
+        a = Variable(10)
+        b = Variable(20)
 
-#     def test(self):
-#         x = []
-#         y = []
-#         o = add(x, y)
-#         self.assertIsNotNone(o)
+        o = add(a, b)
+
+        assert o is not None
 
 
-# class TestAdd:
-#     def test(self):
-#         x = []
-#         y = []
-#         o = multiply(x, y)
-#         self.assertIsNotNone(o)
+class TestMultiply:
+    def test(self):
+        a = Variable(10)
+        b = Variable(20)
+
+        o = multiply(a, b)
+
+        assert o is not None

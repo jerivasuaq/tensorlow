@@ -1,8 +1,9 @@
+from typing import List
 from tensorlow.nodes import Graph, Node
 
 
 class Operation(Node):
-    def __init__(self, input_nodes=[]):
+    def __init__(self, input_nodes: List[Node] = []):
         super().__init__(input_nodes)
 
         for node in input_nodes:
@@ -15,7 +16,7 @@ class Operation(Node):
 
 
 class add(Operation):
-    def __init__(self, x, y):
+    def __init__(self, x: Node, y: Node):
         super().__init__([x, y])
 
     def compute(self, x_var, y_var):
