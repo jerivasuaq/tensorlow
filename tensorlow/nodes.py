@@ -5,6 +5,8 @@ class Graph:
         self.operations = []
         self.placeholders = []
         self.variables = []
+        if not Graph._default_graph:
+            self.set_as_default()
 
     def set_as_default(self):
         Graph._default_graph = self
